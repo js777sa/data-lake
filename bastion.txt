@@ -1,0 +1,7 @@
+resource "aws_instance" "bastion" {
+  # ... existing code ...
+
+  tags = {
+    Name = "${local.prefix}-bastion"
+  }
+}
